@@ -5,7 +5,7 @@ const Device   = require('tago/device');
 const Utils    = require('tago/utils');
 const Account  = require('tago/account');
 const co       = require('co');
-console.log('oi');
+
 function convert_hex2dec(num) {
   return parseInt((num), 16).toString(10);
 }
@@ -128,4 +128,4 @@ function parse(context, scope) {
   }).catch(context.log);
 }
 
-module.exports = new Analysis(parse, 'd24e0f51-dd8e-42e0-af0e-d5e5d39080ca');
+module.exports = new Analysis(parse, 'analysis-token');
